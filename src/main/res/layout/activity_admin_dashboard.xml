@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Post Notification"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/adminNoticePincode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="16dp"
+        android:hint="Pincode of the concerned location"
+        android:layout_below="@+id/text4"
+        android:background="@drawable/custom_edittext"
+        android:layout_marginTop="50dp"
+        android:textColorHint="#999999"/>
+
+    <EditText
+        android:id="@+id/adminNoticeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="16dp"
+        android:layout_below="@+id/adminNoticePincode"
+        android:background="@drawable/custom_edittext"
+        android:hint="Notification Title"
+        android:layout_marginTop="40dp"
+        android:textColorHint="#999999"/>
+
+
+
+    <!-- <EditText-->
+    <!-- android:id="@+id/adminNoticeCategory"-->
+    <!-- android:layout_width="match_parent"-->
+    <!-- android:layout_height="wrap_content"-->
+    <!-- android:hint="Category"-->
+    <!-- android:layout_below="@+id/adminNoticeTitle"-->
+    <!-- android:layout_marginTop="20dp"-->
+    <!-- android:textColorHint="#999999"/>-->
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Category"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_below="@+id/adminNoticeTitle"
+        />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="40dp"
+        android:paddingLeft="16dp" />
+
+    <EditText
+        android:id="@+id/adminNoticeDetails"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:layout_height="55dp"
+        android:hint="Notification Details"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@+id/categorySpinner"
+        android:textColorHint="#999999"/>
+
+    <Button
+        android:id="@+id/adminNoticeSubmitButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="#147ACC"
+        android:text="Post Notification"
+        android:layout_below="@+id/adminNoticeDetails"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="47dp"/>
+
+    <Button
+        android:id="@+id/adminFetchQueriesButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="See users' queries"
+        android:backgroundTint="#147ACC"
+        android:layout_below="@+id/adminNoticeSubmitButton"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="77dp"/>
+
+</RelativeLayout>

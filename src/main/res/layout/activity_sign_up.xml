@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="10dp"
+            tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up as a new user"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="16dp"
+        android:hint="First Name"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#999999"/>
+
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Last Name"
+        android:paddingLeft="16dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@+id/firstNameEditText"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#999999"/>
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Phone Number"
+        android:paddingLeft="16dp"
+        android:inputType="phone"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@+id/lastNameEditText"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#999999"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@+id/phoneNumberEditText"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#999999"/>
+
+    <EditText
+        android:id="@+id/areaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Area"
+        android:paddingLeft="16dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@+id/emailEditText"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#999999"/>
+
+    <EditText
+        android:id="@+id/pinCodeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Pin Code"
+        android:paddingLeft="16dp"
+        android:inputType="number"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@+id/areaEditText"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#999999"/>
+
+    <EditText
+        android:id="@+id/buildingNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Building Name"
+        android:paddingLeft="16dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@+id/pinCodeEditText"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#999999"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@+id/buildingNameEditText"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#999999"/>
+
+    <EditText
+        android:id="@+id/passwordEditText2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="Reenter Password"
+        android:inputType="textPassword"
+        android:textColorHint="#999999" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:backgroundTint="#147ACC"
+        android:layout_below="@+id/passwordEditText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

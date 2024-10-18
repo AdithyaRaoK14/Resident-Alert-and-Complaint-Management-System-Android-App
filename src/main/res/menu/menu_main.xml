@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/water"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="Water" />
+
+    <item
+        android:id="@+id/electricity"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Electricity" />
+
+    <item
+        android:id="@+id/traffic"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Traffic" />
+
+    <item
+        android:id="@+id/road_work"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Road Work" />
+
+    <item
+        android:id="@+id/waste"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Waste Management" />
+
+    <item
+        android:id="@+id/miscellaneous"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Miscellaneous" />
+
+    <item
+        android:id="@+id/discussion"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Discussion" />
+
+
+</menu>

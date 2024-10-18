@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Municipal Corporation \nResident Complaint System"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="Login to Portal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Username"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/custom_user_icon"
+        android:layout_below="@+id/text"
+        android:drawablePadding="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColorHint="#999999"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="12dp"
+        android:hint="Password"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_below="@+id/usernameEditText"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/custom_password"
+        android:textColorHint="#999999"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="47dp"
+        android:backgroundTint="#147ACC"
+        android:text="Login"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/signUpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Sign Up"
+        android:textColor="#147ACC"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/adminLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Admin? Login here"
+        android:textColor="#147ACC"
+        android:textSize="16sp" />
+
+</RelativeLayout>
